@@ -1,0 +1,13 @@
+Package: libc6
+Version: 2.15-r2-arago3
+Description: external-linaro-toolchain version 2013.03-r2-arago3
+ external-linaro-toolchain version 2013.03-r2-arago3
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7ahf-vfp-neon-3.2
+OE: external-linaro-toolchain
+Homepage: unknown
+Provides: rtld(GNU_HASH), glibc
+Source: file://SUPPORTED
