@@ -17,6 +17,7 @@ then
 	rm -f /etc/nologin /etc/nologin.boot
 fi
 /home/root/led_flash.sh &
-/home/root/gps_test1 -qws -fn wenquanyi &
+#/home/root/gps_test1 -qws -fn wenquanyi &
+/home/root/gps_test1 -qws &
 #/home/root/gps_test1 -qws &
 : exit 0
