@@ -16,6 +16,7 @@ if test -f /etc/nologin.boot
 then
 	rm -f /etc/nologin /etc/nologin.boot
 fi
+ifconfig eth0 192.168.1.2
 /home/root/led_flash.sh &
 #/home/root/gps_test1 -qws -fn wenquanyi &
 /home/root/gps_test1 -qws &

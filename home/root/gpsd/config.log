@@ -1,0 +1,520 @@
+file /home/gaoming/workspace/gpsd/SConstruct,line 506:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking if compiler accepts -Wextra ...
+scons: Configure: ".sconf_temp/conftest_0.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_0.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wmissing-declarations -O2 .sconf_temp/conftest_0.c
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_0 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_0.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wall ...
+scons: Configure: ".sconf_temp/conftest_1.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_1.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wmissing-declarations -O2 .sconf_temp/conftest_1.c
+.sconf_temp/conftest_1.c: In function 'main':
+.sconf_temp/conftest_1.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_1.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_1 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_1.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wno-uninitialized ...
+scons: Configure: ".sconf_temp/conftest_2.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_2.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wmissing-declarations -O2 .sconf_temp/conftest_2.c
+.sconf_temp/conftest_2.c: In function 'main':
+.sconf_temp/conftest_2.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_2.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_2 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_2.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wno-missing-field-initializers ...
+scons: Configure: ".sconf_temp/conftest_3.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_3.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wmissing-declarations -O2 .sconf_temp/conftest_3.c
+.sconf_temp/conftest_3.c: In function 'main':
+.sconf_temp/conftest_3.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_3.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_3 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_3.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wcast-align ...
+scons: Configure: ".sconf_temp/conftest_4.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_4.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_4.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -O2 .sconf_temp/conftest_4.c
+.sconf_temp/conftest_4.c: In function 'main':
+.sconf_temp/conftest_4.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_4.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_4 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_4.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wmissing-declarations ...
+scons: Configure: ".sconf_temp/conftest_5.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_5.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_5.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wmissing-declarations -O2 .sconf_temp/conftest_5.c
+.sconf_temp/conftest_5.c: In function 'main':
+.sconf_temp/conftest_5.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_5.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_5 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_5.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wstrict-prototypes ...
+scons: Configure: ".sconf_temp/conftest_6.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_6.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_6.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wmissing-declarations -O2 .sconf_temp/conftest_6.c
+.sconf_temp/conftest_6.c: In function 'main':
+.sconf_temp/conftest_6.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_6.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_6 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_6.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wpointer-arith ...
+scons: Configure: ".sconf_temp/conftest_7.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_7.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_7.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wmissing-declarations -O2 .sconf_temp/conftest_7.c
+.sconf_temp/conftest_7.c: In function 'main':
+.sconf_temp/conftest_7.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_7.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_7 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_7.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -Wreturn-type ...
+scons: Configure: ".sconf_temp/conftest_8.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_8.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_8.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -Wmissing-declarations -O2 .sconf_temp/conftest_8.c
+.sconf_temp/conftest_8.c: In function 'main':
+.sconf_temp/conftest_8.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_8.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_8 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_8.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking if compiler accepts -pthread ...
+scons: Configure: ".sconf_temp/conftest_9.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_9.c <-
+  |  |
+  |  |        int main(int argc, char **argv) {
+  |  |            return 0;
+  |  |        }
+  |  |    
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_9.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 .sconf_temp/conftest_9.c
+.sconf_temp/conftest_9.c: In function 'main':
+.sconf_temp/conftest_9.c:2:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_9.c:2:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_9 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_9.o -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib
+scons: Configure: yes
+
+scons: Configure: Checking whether the C++ compiler works
+scons: Configure: ".sconf_temp/conftest_10.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_10.cpp <-
+  |  |
+  |  |int main()
+  |  |{
+  |  |    return 0;
+  |  |}
+  |  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-c++ -o .sconf_temp/conftest_10.o -c -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_10.cpp
+sh: 1: /home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-c++: not found
+scons: Configure: no
+
+scons: Configure: Checking for ncurses... 
+scons: Configure: ".sconf_temp/conftest_11" is up to date.
+scons: Configure: The original builder output was:
+  |pkg-config --exists 'ncurses'
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for libusb-1.0... 
+scons: Configure: Building ".sconf_temp/conftest_12" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |pkg-config --exists 'libusb-1.0'
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C library librt... 
+scons: Configure: ".sconf_temp/conftest_13.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_13.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_13.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_13.c
+.sconf_temp/conftest_13.c:5:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_13 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_13.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking for dbus-1... 
+scons: Configure: Building ".sconf_temp/conftest_14" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |pkg-config --exists 'dbus-1'
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for bluez... 
+scons: Configure: Building ".sconf_temp/conftest_15" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |pkg-config --exists 'bluez'
+  |
+scons: Configure: (cached) no
+
+scons: Configure: Checking for C type in_port_t... 
+scons: Configure: ".sconf_temp/conftest_16.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_16.c <-
+  |  |
+  |  |
+  |  |#include <netinet/in.h>
+  |  |
+  |  |int main() {
+  |  |  if ((in_port_t *) 0)
+  |  |    return 0;
+  |  |  if (sizeof (in_port_t))
+  |  |    return 0;
+  |  |}
+  |  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_16.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_16.c
+.sconf_temp/conftest_16.c:5:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_16 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_16.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking whether SUN_LEN is declared... 
+scons: Configure: ".sconf_temp/conftest_17.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_17.c <-
+  |  |#include <sys/un.h>
+  |  |int main()
+  |  |{
+  |  |#ifndef SUN_LEN
+  |  |    (void) SUN_LEN;
+  |  |#endif
+  |  |    ;
+  |  |    return 0;
+  |  |}
+  |  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_17.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_17.c
+.sconf_temp/conftest_17.c:2:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+scons: Configure: yes
+
+scons: Configure: Checking for C header file linux/can.h... 
+.sconf_temp/conftest_18.c <-
+  |#include <bits/sockaddr.h>
+  |
+  |#include <linux/can.h>
+  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_18.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_18.c
+scons: Configure: yes
+
+scons: Configure: Checking if compiler is C11 ...
+.sconf_temp/conftest_19.c <-
+  |
+  |	#if (__STDC_VERSION__ < 201112L) 
+  |        #error Not C11
+  |        #endif
+  |        int main(int argc, char **argv) {
+  |            return 0;
+  |        }
+  |    
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_19.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_19.c
+.sconf_temp/conftest_19.c:3:10: error: #error Not C11
+.sconf_temp/conftest_19.c: In function 'main':
+.sconf_temp/conftest_19.c:5:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_19.c:5:35: warning: unused parameter 'argv' [-Wunused-parameter]
+scons: Configure: no
+
+scons: Configure: Checking for C header file libkern/OSAtomic.h... 
+.sconf_temp/conftest_20.c <-
+  |
+  |#include <libkern/OSAtomic.h>
+  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_20.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_20.c
+.sconf_temp/conftest_20.c:2:30: fatal error: libkern/OSAtomic.h: No such file or directory
+compilation terminated.
+scons: Configure: no
+
+scons: Configure: Checking if compiler supplies __ORDER_BIG_ENDIAN__ ...
+.sconf_temp/conftest_21.c <-
+  |
+  |        #ifndef __ORDER_BIG_ENDIAN__
+  |        #error __ORDER_BIG_ENDIAN__ is not defined
+  |        #endif
+  |        int main(int argc, char **argv) {
+  |            return 0;
+  |        }
+  |    
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_21.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_21.c
+.sconf_temp/conftest_21.c: In function 'main':
+.sconf_temp/conftest_21.c:5:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_21.c:5:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_21 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_21.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking if compiler supplies __ORDER_LITTLE_ENDIAN__ ...
+.sconf_temp/conftest_22.c <-
+  |
+  |        #ifndef __ORDER_LITTLE_ENDIAN__
+  |        #error __ORDER_LITTLE_ENDIAN__ is not defined
+  |        #endif
+  |        int main(int argc, char **argv) {
+  |            return 0;
+  |        }
+  |    
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_22.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_22.c
+.sconf_temp/conftest_22.c: In function 'main':
+.sconf_temp/conftest_22.c:5:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_22.c:5:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_22 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_22.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking if compiler supplies __BYTE_ORDER__ ...
+.sconf_temp/conftest_23.c <-
+  |
+  |        #ifndef __BYTE_ORDER__
+  |        #error __BYTE_ORDER__ is not defined
+  |        #endif
+  |        int main(int argc, char **argv) {
+  |            return 0;
+  |        }
+  |    
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_23.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_23.c
+.sconf_temp/conftest_23.c: In function 'main':
+.sconf_temp/conftest_23.c:5:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_23.c:5:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_23 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_23.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking for C function daemon()... 
+.sconf_temp/conftest_24.c <-
+  |
+  |
+  |#include <assert.h>
+  |
+  |#ifdef __cplusplus
+  |extern "C"
+  |#endif
+  |char daemon();
+  |
+  |int main() {
+  |#if defined (__stub_daemon) || defined (__stub___daemon)
+  |  fail fail fail
+  |#else
+  |  daemon();
+  |#endif
+  |
+  |  return 0;
+  |}
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_24.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_24.c
+.sconf_temp/conftest_24.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+.sconf_temp/conftest_24.c:10:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_24 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_24.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking for C function strlcpy()... 
+.sconf_temp/conftest_25.c <-
+  |
+  |
+  |#include <assert.h>
+  |
+  |#ifdef __cplusplus
+  |extern "C"
+  |#endif
+  |char strlcpy();
+  |
+  |int main() {
+  |#if defined (__stub_strlcpy) || defined (__stub___strlcpy)
+  |  fail fail fail
+  |#else
+  |  strlcpy();
+  |#endif
+  |
+  |  return 0;
+  |}
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_25.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_25.c
+.sconf_temp/conftest_25.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+.sconf_temp/conftest_25.c:10:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_25 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_25.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+.sconf_temp/conftest_25.o: In function `main':
+conftest_25.c:(.text.startup+0x2): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C function strlcat()... 
+.sconf_temp/conftest_26.c <-
+  |
+  |
+  |#include <assert.h>
+  |
+  |#ifdef __cplusplus
+  |extern "C"
+  |#endif
+  |char strlcat();
+  |
+  |int main() {
+  |#if defined (__stub_strlcat) || defined (__stub___strlcat)
+  |  fail fail fail
+  |#else
+  |  strlcat();
+  |#endif
+  |
+  |  return 0;
+  |}
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_26.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_26.c
+.sconf_temp/conftest_26.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+.sconf_temp/conftest_26.c:10:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_26 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_26.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+.sconf_temp/conftest_26.o: In function `main':
+conftest_26.c:(.text.startup+0x2): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C function clock_gettime()... 
+.sconf_temp/conftest_27.c <-
+  |
+  |
+  |#include <assert.h>
+  |
+  |#ifdef __cplusplus
+  |extern "C"
+  |#endif
+  |char clock_gettime();
+  |
+  |int main() {
+  |#if defined (__stub_clock_gettime) || defined (__stub___clock_gettime)
+  |  fail fail fail
+  |#else
+  |  clock_gettime();
+  |#endif
+  |
+  |  return 0;
+  |}
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_27.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_27.c
+.sconf_temp/conftest_27.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+.sconf_temp/conftest_27.c:10:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_27 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_27.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking for C header file sys/timepps.h... 
+.sconf_temp/conftest_28.c <-
+  |#include <sys/types.h>
+  |#include <sys/time.h>
+  |
+  |#include <sys/timepps.h>
+  |
+  |
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_28.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_28.c
+.sconf_temp/conftest_28.c:4:25: fatal error: sys/timepps.h: No such file or directory
+compilation terminated.
+scons: Configure: no
+
+scons: Configure: Checking if sys/ioctl.h supplies TIOCMIWAIT ...
+.sconf_temp/conftest_29.c <-
+  |
+  |        #include <sys/ioctl.h>
+  |        #ifndef TIOCMIWAIT
+  |        #error TIOCMIWAIT is not defined
+  |        #endif
+  |        int main(int argc, char **argv) {
+  |            return 0;
+  |        }
+  |    
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_29.o -c -Wmissing-prototypes --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread .sconf_temp/conftest_29.c
+.sconf_temp/conftest_29.c: In function 'main':
+.sconf_temp/conftest_29.c:6:22: warning: unused parameter 'argc' [-Wunused-parameter]
+.sconf_temp/conftest_29.c:6:35: warning: unused parameter 'argv' [-Wunused-parameter]
+/home/gaoming/workspace/arm_gcc/i686-arago-linux/usr/bin/arm-linux-gnueabihf-gcc -o .sconf_temp/conftest_29 --sysroot=/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/ -pthread -Wl,-rpath=//home/gaoming/workspace/output/staging/usr/lib,--enable-new-dtags .sconf_temp/conftest_29.o -L. -L/home/gaoming/workspace/arm_gcc/armv7ahf-vfp-neon-3.2-oe-linux-gnueabi/home/gaoming/workspace/output/staging/usr/lib -lrt
+scons: Configure: yes
+
+scons: Configure: Checking that xsltproc can make man pages... 
+xsltproc --nonet --noout 'http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl' xmltest.xml
+I/O error : Attempt to load network entity http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+warning: failed to load external entity "http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"
+cannot parse http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+scons: Configure: no
+
+scons: Configure: Checking for QtNetwork... 
+scons: Configure: Building ".sconf_temp/conftest_31" failed in a previous run and all its sources are up to date.
+scons: Configure: The original builder output was:
+  |pkg-config --exists 'QtNetwork'
+  |
+scons: Configure: (cached) no
+
+

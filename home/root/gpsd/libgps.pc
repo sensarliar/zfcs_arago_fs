@@ -1,0 +1,10 @@
+prefix=/home/gaoming/workspace/output/staging/usr/
+exec_prefix=${prefix}
+libdir=lib
+includedir=${prefix}/include
+
+Name: GPSD
+Description: GPS Daemon communication library
+Version: 3.15~dev
+Cflags: -I${includedir}
+Libs: -L${libdir} -lgps

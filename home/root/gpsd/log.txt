@@ -1,0 +1,182 @@
+scons: Reading SConscript files ...
+Checking if compiler accepts -Wextra ...(cached) yes
+Checking if compiler accepts -Wall ...(cached) yes
+Checking if compiler accepts -Wno-uninitialized ...(cached) yes
+Checking if compiler accepts -Wno-missing-field-initializers ...(cached) yes
+Checking if compiler accepts -Wcast-align ...(cached) yes
+Checking if compiler accepts -Wmissing-declarations ...(cached) yes
+Checking if compiler accepts -Wstrict-prototypes ...(cached) yes
+Checking if compiler accepts -Wpointer-arith ...(cached) yes
+Checking if compiler accepts -Wreturn-type ...(cached) yes
+Checking if compiler accepts -pthread ...(cached) yes
+Checking whether the C++ compiler works(cached) yes
+Checking for ncurses... (cached) yes
+Checking for libusb-1.0... (cached) no
+Checking for C library librt... (cached) yes
+Checking for dbus-1... (cached) no
+Turning off dbus-export support, library not found.
+Checking for bluez... (cached) no
+Turning off Bluetooth support, library not found.
+Checking for C type in_port_t... (cached) yes
+Checking whether SUN_LEN is declared... (cached) yes
+Checking for C header file linux/can.h... (cached) yes
+You have kernel CANbus available.
+Checking if compiler is C11 ...(cached) no
+Checking for C header file libkern/OSAtomic.h... (cached) no
+No memory barriers - SHM export and time hinting may not be reliable.
+Checking if compiler supplies __ORDER_BIG_ENDIAN__ ...(cached) yes
+Checking if compiler supplies __ORDER_LITTLE_ENDIAN__ ...(cached) yes
+Checking if compiler supplies __BYTE_ORDER__ ...(cached) yes
+Your compiler has built-in endianness support.
+Checking for C function daemon()... (cached) yes
+Checking for C function strlcpy()... (cached) no
+Checking for C function strlcat()... (cached) no
+Checking for C function clock_gettime()... (cached) yes
+Checking for C header file sys/timepps.h... (cached) no
+Checking if sys/ioctl.h supplies TIOCMIWAIT ...(cached) yes
+Checking that xsltproc can make man pages... (cached) no
+Neither xsltproc nor xmlto found, documentation cannot be built.
+Checking for QtNetwork... (cached) no
+Altered configuration variables:
+dbus_export = False (default True): enable DBUS export support
+bluez = False (default True): BlueZ support for Bluetooth devices
+qt = False (default True): build QT bindings
+Part of the website build requires asciidoc, not installed.
+scons: done reading SConscript files.
+scons: Building targets ...
+substituter(["jsongen.py"], ["jsongen.py.in"])
+chmod -w jsongen.py
+chmod +x jsongen.py
+rm -f ais_json.i && /usr/bin/python jsongen.py --ais --target=parser > ais_json.i && chmod a-w ais_json.i
+Creating 'gpsd_config.h'
+gcc -o ais_json.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC ais_json.c
+gcc -o bits.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC bits.c
+gcc -o clock_gettime.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC clock_gettime.c
+gcc -o daemon.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC daemon.c
+Creating 'gpsd.h'
+gcc -o gpsutils.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC gpsutils.c
+gcc -o gpsdclient.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC gpsdclient.c
+substituter(["maskaudit.py"], ["maskaudit.py.in"])
+chmod -w maskaudit.py
+chmod +x maskaudit.py
+rm -f gps_maskdump.c && /usr/bin/python maskaudit.py -c . > gps_maskdump.c && chmod a-w gps_maskdump.c
+gcc -o gps_maskdump.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC gps_maskdump.c
+gcc -o hex.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC hex.c
+gcc -o json.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC json.c
+gcc -o libgps_core.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC libgps_core.c
+gcc -o libgps_dbus.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC libgps_dbus.c
+gcc -o libgps_json.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC libgps_json.c
+gcc -o libgps_shm.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC libgps_shm.c
+gcc -o libgps_sock.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC libgps_sock.c
+gcc -o netlib.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC netlib.c
+gcc -o ntpshmread.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC ntpshmread.c
+gcc -o ntpshmwrite.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC ntpshmwrite.c
+gcc -o rtcm2_json.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC rtcm2_json.c
+gcc -o rtcm3_json.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC rtcm3_json.c
+gcc -o shared_json.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC shared_json.c
+gcc -o strl.os -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread -fPIC strl.c
+g++ -o libgpsmm.os -c -Wmissing-declarations -O2 -pthread -fPIC libgpsmm.cpp
+g++ -o libgps.so.22.0.0 -pthread -shared -Wl,-Bsymbolic -Wl,-soname=libgps.so.22 -Wl,-rpath=//usr/local/lib,--enable-new-dtags ais_json.os bits.os clock_gettime.os daemon.os gpsutils.os gpsdclient.os gps_maskdump.os hex.os json.os libgps_core.os libgps_dbus.os libgps_json.os libgps_shm.os libgps_sock.os netlib.os ntpshmread.os ntpshmwrite.os rtcm2_json.os rtcm3_json.os shared_json.os strl.os libgpsmm.os -L. -lrt -lrt
+rm -f libgps.so; ln -s libgps.so.22.0.0 libgps.so
+rm -f libgps.so.22; ln -s libgps.so.22.0.0 libgps.so.22
+rm -f libgps.so.22.0; ln -s libgps.so.22.0.0 libgps.so.22.0
+gcc -o bsd_base64.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread bsd_base64.c
+gcc -o crc24q.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread crc24q.c
+Creating 'revision.h'
+gcc -o gpsd_json.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpsd_json.c
+gcc -o geoid.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread geoid.c
+gcc -o isgps.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread isgps.c
+gcc -o libgpsd_core.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread libgpsd_core.c
+gcc -o matrix.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread matrix.c
+gcc -o net_dgpsip.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread net_dgpsip.c
+gcc -o net_gnss_dispatch.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread net_gnss_dispatch.c
+gcc -o net_ntrip.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread net_ntrip.c
+gcc -o ppsthread.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread ppsthread.c
+rm -f packet_names.h && sed -e '/^ *\([A-Z][A-Z0-9_]*\),/s// "\1",/' < packet_states.h > packet_names.h && chmod a-w packet_names.h
+gcc -o packet.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread packet.c
+gcc -o pseudonmea.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread pseudonmea.c
+gcc -o pseudoais.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread pseudoais.c
+gcc -o serial.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread serial.c
+gcc -o subframe.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread subframe.c
+leapseconds_cache_rebuild(["leapseconds.cache"], ["leapsecond.py"])
+timebase_h(["timebase.h"], ["leapseconds.cache"])
+gcc -o timebase.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread timebase.c
+gcc -o timespec_str.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread timespec_str.c
+gcc -o drivers.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread drivers.c
+gcc -o driver_ais.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_ais.c
+gcc -o driver_evermore.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_evermore.c
+gcc -o driver_garmin.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_garmin.c
+gcc -o driver_garmin_txt.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_garmin_txt.c
+gcc -o driver_geostar.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_geostar.c
+gcc -o driver_italk.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_italk.c
+gcc -o driver_navcom.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_navcom.c
+gcc -o driver_nmea0183.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_nmea0183.c
+gcc -o driver_nmea2000.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_nmea2000.c
+gcc -o driver_oncore.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_oncore.c
+gcc -o driver_rtcm2.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_rtcm2.c
+gcc -o driver_rtcm3.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_rtcm3.c
+gcc -o driver_sirf.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_sirf.c
+gcc -o driver_superstar2.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_superstar2.c
+gcc -o driver_tsip.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_tsip.c
+gcc -o driver_ubx.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_ubx.c
+gcc -o driver_zodiac.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread driver_zodiac.c
+ar rc libgpsd.a bsd_base64.o crc24q.o gpsd_json.o geoid.o isgps.o libgpsd_core.o matrix.o net_dgpsip.o net_gnss_dispatch.o net_ntrip.o ppsthread.o packet.o pseudonmea.o pseudoais.o serial.o subframe.o timebase.o timespec_str.o drivers.o driver_ais.o driver_evermore.o driver_garmin.o driver_garmin_txt.o driver_geostar.o driver_italk.o driver_navcom.o driver_nmea0183.o driver_nmea2000.o driver_oncore.o driver_rtcm2.o driver_rtcm3.o driver_sirf.o driver_superstar2.o driver_tsip.o driver_ubx.o driver_zodiac.o
+ranlib libgpsd.a
+gcc -o gpsd.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpsd.c
+gcc -o timehint.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread timehint.c
+gcc -o shmexport.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread shmexport.c
+gcc -o dbusexport.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread dbusexport.c
+gcc -o sd_socket.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread sd_socket.c
+gcc -o gpsd -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpsd.o timehint.o shmexport.o dbusexport.o sd_socket.o -L. -lgpsd -lgps -lm -lrt
+gcc -o gpsdecode.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpsdecode.c
+gcc -o gpsdecode -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpsdecode.o -L. -lgpsd -lgps -lm -lrt
+gcc -o gpsctl.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpsctl.c
+gcc -o gpsctl -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpsctl.o -L. -lgpsd -lgps -lm -lrt
+gcc -o gpsdctl.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpsdctl.c
+gcc -o gpsdctl -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpsdctl.o -L. -lrt -lgps -lm -lrt
+gcc -o gpspipe.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpspipe.c
+gcc -o gpspipe -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpspipe.o -L. -lrt -lgps -lm -lrt
+gcc -o gps2udp.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gps2udp.c
+gps2udp.c: In function 'main':
+gps2udp.c:319:18: warning: array subscript is above array bounds [-Warray-bounds]
+gcc -o gps2udp -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gps2udp.o -L. -lrt -lgps -lm -lrt
+gcc -o gpxlogger.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpxlogger.c
+gcc -o gpxlogger -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpxlogger.o -L. -lrt -lgps -lm -lrt
+gcc -o lcdgps.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread lcdgps.c
+gcc -o lcdgps -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags lcdgps.o -L. -lrt -lgps -lm -lrt
+gcc -o ntpshmmon.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread ntpshmmon.c
+gcc -o ntpshmmon -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags ntpshmmon.o -L. -lrt -lgps -lm -lrt
+gcc -o cgps.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread cgps.c
+gcc -o cgps -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags cgps.o -L. -lrt -lgps -lm -lrt -lncurses -ltinfo
+gcc -o gpsmon.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread gpsmon.c
+gcc -o monitor_italk.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_italk.c
+gcc -o monitor_nmea0183.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_nmea0183.c
+gcc -o monitor_oncore.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_oncore.c
+gcc -o monitor_sirf.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_sirf.c
+gcc -o monitor_superstar2.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_superstar2.c
+gcc -o monitor_tnt.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_tnt.c
+gcc -o monitor_ubx.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_ubx.c
+gcc -o monitor_garmin.o -c -Wmissing-prototypes -Wextra -Wall -Wno-uninitialized -Wno-missing-field-initializers -Wcast-align -Wmissing-declarations -Wstrict-prototypes -Wpointer-arith -Wreturn-type -pthread -Wmissing-declarations -O2 -pthread monitor_garmin.c
+gcc -o gpsmon -pthread -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpsmon.o monitor_italk.o monitor_nmea0183.o monitor_oncore.o monitor_sirf.o monitor_superstar2.o monitor_tnt.o monitor_ubx.o monitor_garmin.o -L. -lgpsd -lgps -lrt -lncurses -ltinfo -lm
+gcc -pthread -o gpsclient-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 gpsclient.c
+gcc -pthread -o geoid-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 geoid.c
+gcc -pthread -o gpsdclient-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 gpsdclient.c
+gcc -pthread -o strl-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 strl.c
+gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -o gps/clienthelpers.so -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpsclient-py_2_7_3_final_0.so geoid-py_2_7_3_final_0.so gpsdclient-py_2_7_3_final_0.so strl-py_2_7_3_final_0.so -L. -lrt
+gcc -pthread -o gpspacket-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 gpspacket.c
+gcc -pthread -o packet-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 packet.c
+gcc -pthread -o isgps-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 isgps.c
+gcc -pthread -o driver_rtcm2-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 driver_rtcm2.c
+gcc -pthread -o hex-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 hex.c
+gcc -pthread -o crc24q-py_2_7_3_final_0.so -c -fno-strict-aliasing -Wmissing-declarations -O2 -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.7 crc24q.c
+gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -o gps/packet.so -Wl,-rpath=//usr/local/lib,--enable-new-dtags gpspacket-py_2_7_3_final_0.so packet-py_2_7_3_final_0.so isgps-py_2_7_3_final_0.so driver_rtcm2-py_2_7_3_final_0.so strl-py_2_7_3_final_0.so hex-py_2_7_3_final_0.so crc24q-py_2_7_3_final_0.so -L. -lrt
+Creating 'gps-3.15~dev.egg-info'
+substituter(["gpsd.php"], ["gpsd.php.in"])
+chmod -w gpsd.php
+substituter(["libgps.pc"], ["libgps.pc.in"])
+chmod -w libgps.pc
+substituter(["libgpsd.pc"], ["libgpsd.pc.in"])
+chmod -w libgpsd.pc
+substituter(["gpsd.rules"], ["gpsd.rules.in"])
+chmod -w gpsd.rules
+scons: done building targets.
